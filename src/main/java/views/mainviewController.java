@@ -46,10 +46,12 @@ public class mainviewController {
 			amt1 = Double.parseDouble(val1);
 			amt2 = Double.parseDouble(val2);
 		}catch (NumberFormatException e) {
-			LowerNumTextField.accessibleTextProperty().set("");
-			upperNumTextField.accessibleTextProperty().set("");
+			LowerNumTextField.textProperty().set("");
+			upperNumTextField.textProperty().set("");
 		}
-
+		LowerNumTextField.textProperty().set("");
+		upperNumTextField.textProperty().set("");
+		
 		return amt1+amt2;
 	}
 

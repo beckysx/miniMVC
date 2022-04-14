@@ -30,7 +30,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="upperNumTextField" />
+                  <TextField id="enterUpperVal" fx:id="upperNumTextField" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
@@ -40,10 +40,10 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="LowerNumTextField" />
+                  <TextField id="enterLowerVal" fx:id="LowerNumTextField" />
                </children>
             </HBox>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClickAdd" prefWidth="100.0" text="Add" textAlignment="CENTER">
+            <Button id="addButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClickAdd" prefWidth="100.0" text="Add" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
@@ -55,7 +55,7 @@
       </VBox>
    </center>
    <bottom>
-      <Label fx:id="SumLabel" alignment="CENTER" text="50" BorderPane.alignment="CENTER">
+      <Label id="sumText" fx:id="SumLabel" alignment="CENTER" text="50" BorderPane.alignment="CENTER">
          <font>
             <Font size="24.0" />
          </font>
